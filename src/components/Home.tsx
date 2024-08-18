@@ -5,7 +5,7 @@
 const Home = () => {
   return (
     <div>
-      <img src="images/logo.png" alt="ats-logo" style={{ maxWidth: "100%" }} />
+      <img src="images/logo.png" alt="ats-logo" style={{ maxWidth: "100%", width: 450, marginBottom: 24 }} />
       <div>Welcome to the ATS coding assessment.</div>
       <div>There are a few tests for you to try out.</div>
       <div>Thank you for taking the time to complete the assessment.</div>

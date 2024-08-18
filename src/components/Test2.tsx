@@ -7,7 +7,7 @@
 //    count: number;
 //   }
 
-// 2) Can you describe in a why the problem happened and why your solution fixes it?
+// 2) Can you describe why the problem happened and why your solution fixes it?
 
 import { useState } from "react";
 

@@ -14,6 +14,9 @@ const GenericComponent = ({
 }>) => {
   const Component = typeof onClick === "function" ? "button" : "h5";
   const isParent = title.includes("Parent");
+
+  console.log(`Rendering ${title}`);
+
   return (
     <div
       style={{
@@ -41,16 +44,16 @@ const Test5 = () => {
         <GenericComponent title={"Parent 2 // Count: " + count}>
           <GenericComponent title="Parent 3">
             <GenericComponent title="Parent 4">
-              <GenericComponent title="Child" />
+              <GenericComponent title="Child A" />
             </GenericComponent>
             <GenericComponent
               onClick={incrementCount}
               title="Click Here to Increment Count"
             />
           </GenericComponent>
-          <GenericComponent title="Child" />
+          <GenericComponent title="Child B" />
         </GenericComponent>
-        <GenericComponent title="Child" />
+        <GenericComponent title="Child C" />
       </GenericComponent>
     </div>
   );

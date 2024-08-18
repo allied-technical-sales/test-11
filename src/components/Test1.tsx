@@ -17,8 +17,10 @@ class ClassComponent extends React.Component {
   };
 
   componentDidUpdate(prevProps: {}, prevState: { number: number }) {
-    const operator = this.state.number > prevState.number ? " > " : " <= ";
-    console.log(this.state.number + operator + prevState.number);
+    if (this.state.number !== prevState.number) {
+      const operator = this.state.number > prevState.number ? " > " : " < ";
+      console.log(this.state.number + operator + prevState.number);
+    }
   }
 
   componentDidMount() {
